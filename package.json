@@ -28,18 +28,15 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
-    "antd": "^3.13.4",
     "classnames": "^2.2.5",
     "i18n-js": "^3.0.3",
-    "raven-js": "^3.25.2",
     "react": "^16.7.0",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.2.0",
-    "whatwg-fetch": "^3.0.0",
-    "whiteRabbitComponents": "ssh://git@github.com:xanthopoulakis/whiteRabbitComponents.git"
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
