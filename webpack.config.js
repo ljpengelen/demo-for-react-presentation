@@ -15,8 +15,6 @@ const getNpmVersion = function() {
   return require("./package.json").version;
 };
 
-const out = path.resolve(__dirname, "dist");
-
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HTML = require("html-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
@@ -42,7 +40,7 @@ const MiniCssExtract = require("mini-css-extract-plugin");
 
 if (isProd) {
   plugins.push(
-    new Clean([out]),
+    new Clean(),
     new MiniCssExtract({
       filename: "[name].[hash].css",
       chunkFilename: "[id].[hash].css"
@@ -103,7 +101,7 @@ module.exports = {
     app: entryPoints("./src/index.js")
   },
   output: {
-    path: out,
+    path: path.resolve(__dirname, "dist"),
     filename: isProd ? "[name].[chunkhash].js" : "[name].[hash].js",
     publicPath: "./"
   },
