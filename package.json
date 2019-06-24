@@ -27,7 +27,6 @@
     "*.{ts,tsx}": "tslint"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.2.5",
     "classnames": "^2.2.5",
     "i18n-js": "^3.0.3",
     "react": "^16.7.0",

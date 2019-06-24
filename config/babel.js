@@ -20,6 +20,7 @@ module.exports = {
         targets: {
           browsers: supportedBrowsers
         },
+        corejs: "2",
         loose: true,
         modules: false,
         useBuiltIns: "entry"
